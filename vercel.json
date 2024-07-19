@@ -12,5 +12,9 @@
         "dest": "bin/www"
       }
     ]
+     "env": {
+    "NODE_ENV": "production",
+    "MY_ENV_VAR": "value" // Add other environment variables here
+  }
   }
   
