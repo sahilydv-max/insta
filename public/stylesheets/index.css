@@ -1,0 +1,185 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4 99%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 1000px;
+
+}
+ 
+ 
+ /* styles.css */
+
+ 
+
+ /* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.login-box {
+    width: 350px;
+    padding: 40px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.title {
+    font-family: 'Billabong', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.login-form .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+}
+
+.divider span {
+    margin: 0 10px;
+    color: #8e8e8e;
+}
+
+.facebook-login-button {
+    width: 100%;
+    padding: 10px;
+    background: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .login-form .input-field {
+        padding: 8px;
+    }
+
+    .login-button, .facebook-login-button {
+        padding: 8px;
+    }
+}
+.text-container {
+    perspective: 1000px;
+    /* position: relative;
+    bottom: 250px;
+    left:50px */
+}
+
+.animated-text {
+    font-size: 2em;
+    color: #333;
+    animation: rotateText 5s infinite, colorChange 10s infinite;
+    transform-style: preserve-3d;
+    transition: color 0.5s ease;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    25% {
+        /* transform: rotateX(180deg) rotateY(0) rotateZ(0); */
+    }
+    50% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+    }
+    75% {
+        /* transform: rotateX(0) rotateY(180deg) rotateZ(0); */
+    }
+    100% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #833ab4; /* Instagram Purple */
+    }
+    25% {
+        color: #fd1d1d; /* Instagram Red */
+    }
+    50% {
+        color: #f56040; /* Instagram Orange */
+    }
+    75% {
+        color: #ffdc80; /* Instagram Yellow */
+    }
+    100% {
+        color: #833ab4; /* Instagram Purple */
+    }
+}
